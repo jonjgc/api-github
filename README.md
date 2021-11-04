@@ -37,7 +37,7 @@ Os frameworks são feitos para facilitar a vida do programador, implementar uma 
 
 Typescript ele é um superset que nos dar a possibilidde de adicionar tipagens. Códigos legado em que um novo programador que usa javascript e está se habituando com os novos códigos e conhecendo suas funções, pode ser um pouco difícil para ele encontrar quais tipagens corretas. Ao usar uma IDE como o VS Code, o mesmo tem a inteligência de ao digitar uma variável, saber quais são suas propriedades, mas nem sempre isso é possível, pois essa possibilidade só é conseguida através do Typescript.
 
-## Cite exemplos de formas de autenticação ao consumir APIs de terceiros.
+## Exemplos de formas de autenticação ao consumir APIs de terceiros.
 
 O Auth é um protocolo avançado para delegar acesso seguro de um usuário em um sistema para outro sistema que permite várias configurações.
 o JSON Web Tokens (JWT) são uma forma de complexdade intermediária para fornecer acesso seguro de uma usuário a uma Web API.
