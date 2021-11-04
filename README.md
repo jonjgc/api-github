@@ -11,7 +11,7 @@ IDE utilizada: VSCode.
 
 ## Para executar é necessário ter o yarn instalado na máquina
 
-A instalação do Yarn pode ser feita de forma bem simples por meio de outro gerenciador de pacotes, como o NPM, Scoop, Chocolatey, entre outros. Além disso, o Yarn download pode ser feito no site oficial da ferramenta(https://blog.betrybe.com/desenvolvimento-web/yarn/#8). Para executar o Yarn install pelo NPM, por exemplo, basta escrever o comando a seguir:
+A instalação do Yarn pode ser feita de forma bem simples por meio de outro gerenciador de pacotes, como o NPM, Scoop, Chocolatey, entre outros. Além disso, o Yarn download pode ser feito no site oficial da ferramenta (https://blog.betrybe.com/desenvolvimento-web/yarn/#8). Para executar o Yarn install pelo NPM, por exemplo, basta escrever o comando a seguir:
 
 npm install -g yarn
 
