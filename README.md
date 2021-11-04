@@ -1,3 +1,28 @@
+
+# Objetivo deste projeto
+
+Usar a API do Github para listar todos os repositórios de um usuário específico na tela.
+
+## Linguagens usadas nesse projeto
+
+Raect.js, JavaScript, Html, CSS e Bootstrap.
+IDE utilizada: VSCode.
+ 
+
+## Para executar é necessário ter o yarn instalado na máquina
+
+A instalação do Yarn pode ser feita de forma bem simples por meio de outro gerenciador de pacotes, como o NPM, Scoop, Chocolatey, entre outros. Além disso, o Yarn download pode ser feito no site oficial da ferramenta(https://blog.betrybe.com/desenvolvimento-web/yarn/#8). Para executar o Yarn install pelo NPM, por exemplo, basta escrever o comando a seguir:
+
+npm install -g yarn
+
+### Após a brir o projeto, execute oo comando yarn start que vai exibir um servidor na porta 3000 com o a tela do projeto
+
+OBS: caso apareça algum erro, execute o seguite comando: yarn add react-scripts
+
+### Mudando o usuário para aparecer seus reposiórios
+
+No código na parte de App.js, foi implementado um hook do react chaamdo useEffect, onde foi usado a função do javaScript Fetch para consumir os dados de da API do github, especificamente de um usuário. 
+
 # Perguntas
 
 ## O que é uma tecnologia de SPA? Cite detalhes dessa abordagem e as principais tecnologias de mercado.
