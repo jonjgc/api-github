@@ -1,0 +1,25 @@
+body{
+    background-color:rgb(224, 221, 217) ; 
+}
+
+#bloco {
+    margin-top: 20px;
+}
+
+div h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+li {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 0 0 5px 10px;
+    width: 60%;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
