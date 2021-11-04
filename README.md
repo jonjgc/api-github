@@ -5,7 +5,7 @@ Usar a API do Github para listar todos os repositórios de um usuário específi
 
 ## Linguagens usadas nesse projeto
 
-Raect.js, JavaScript, Html, CSS e Bootstrap.
+React.js, JavaScript, Html, CSS e Bootstrap.
 IDE utilizada: VSCode.
  
 
