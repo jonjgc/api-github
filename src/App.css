@@ -1,5 +1,5 @@
 body{
-    background-color:rgb(224, 221, 217) ; 
+    background-color:rgb(172, 170, 168); 
 }
 
 #bloco {
@@ -10,6 +10,10 @@ div h2 {
     display: flex;
     justify-content: center;
     margin-top: 30px;
+    border: 1px solid black;
+    padding: 5px;
+    background-color:rgb(116, 113, 110);
+    color: #FFFFFF;
 }
 
 li {
@@ -21,5 +25,11 @@ li {
     -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 	-moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
 	box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
+    transition: width 1s, height 4s;
 }
 
+li:hover {
+    width: 900px;
+    background-color: rgb(234, 226, 241);
+
+}
