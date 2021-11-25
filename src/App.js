@@ -4,16 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function App() {
   const [ repositorios, setRepositorios ] = useState([]);
-  const [ itemsPagina, setItemsPagina ] = useState(2);
+  const [ itemsPagina, setItemsPagina ] = useState(3);
   const [ paginaAtual, setPaginaAtual ] = useState(0)
   const startRepositorios = paginaAtual * itemsPagina;
   const endRepositorios = startRepositorios + itemsPagina;
   const RepositorioAtual = repositorios.slice(startRepositorios, endRepositorios);
   const [ busca, setBusca ] = useState('');
-  
-  //const repFiltrados = repositorios.filter((rep) => rep.startsWith(busca));
-
   const paginas = Math.ceil(repositorios.length / itemsPagina);
+
+
+  
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,9 +26,6 @@ export function App() {
 
   return (
     <div>  
-
-          
-
        
        <h2>Listagem de repositórios</h2> 
 
@@ -37,20 +34,12 @@ export function App() {
             return <button value={index} onClick={(e) => setPaginaAtual(Number(e.target.value))} class="btn btn-primary">{index}</button>
           })}
        </div> 
-
-      <div class="col-2 offset-sm-5 mt-4" >
-
-        <form class="form-inline" >
-            
-            <input value={busca} onChange={(ev) => setBusca(ev.target.value)}  class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search"/>
-        </form>
-              
-       </div>
-
+       
        <ul>
+         
          { RepositorioAtual.map(repositorio => {
            return (
-
+            
              <ul>
                <li>  
                   <h3>{repositorio.name}</h3>
@@ -59,15 +48,14 @@ export function App() {
                   <p><strong>Quantidade de Issues abertas:</strong> {repositorio.open_issues_count}</p>
                   <p><strong>Data de criação:</strong> {repositorio.created_at}</p>
 
-                  <a href={repositorio.html_url} target="_blank" rel="noreferrer">Saiba mais</a>
+                  <a href={repositorio.html_url} target="_blank" rel="noreferrer" id="info">Saiba mais</a>
                </li>
              </ul>  
            )
          }) }
         </ul>
 
-      
-
+     
     </div>
   );
 }
