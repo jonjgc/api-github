@@ -31,7 +31,7 @@ export function App() {
 
        <div id="paginacao"> 
           {Array.from(Array(paginas), (repositorios, index) => {
-            return <button value={index} onClick={(e) => setPaginaAtual(Number(e.target.value))} class="btn btn-primary">{index}</button>
+            return <button value={index} onClick={(e) => setPaginaAtual(Number(e.target.value))} class="btn btn-primary mt-4">{index}</button>
           })}
        </div> 
        
