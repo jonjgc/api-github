@@ -9,7 +9,9 @@ export function App() {
   const startRepositorios = paginaAtual * itemsPagina;
   const endRepositorios = startRepositorios + itemsPagina;
   const RepositorioAtual = repositorios.slice(startRepositorios, endRepositorios);
-
+  const [ busca, setBusca ] = useState('');
+  
+  //const repFiltrados = repositorios.filter((rep) => rep.startsWith(busca));
 
   const paginas = Math.ceil(repositorios.length / itemsPagina);
 
@@ -39,7 +41,8 @@ export function App() {
       <div class="col-2 offset-sm-5 mt-4" >
 
         <form class="form-inline" >
-            <input  class="form-control mr-sm-2" type="search" placeholder="Filtrar" aria-label="Search"/>
+            
+            <input value={busca} onChange={(ev) => setBusca(ev.target.value)}  class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search"/>
         </form>
               
        </div>
@@ -47,8 +50,6 @@ export function App() {
        <ul>
          { RepositorioAtual.map(repositorio => {
            return (
-
-           
 
              <ul>
                <li>  
