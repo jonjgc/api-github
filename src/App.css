@@ -2,6 +2,22 @@ body{
     background-color:rgb(172, 170, 168); 
 }
 
+.bg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity)); 
+}
+#formulario {
+    text-align: center;
+}
+
+#paginacao {
+    text-align: center;
+}
+
+button {
+    margin-right: 5px;
+}
+
 #bloco {
     margin-top: 20px;
 }
